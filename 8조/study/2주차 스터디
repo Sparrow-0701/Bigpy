@@ -1,0 +1,294 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "mount_file_id": "1t11rIXM5_j1cf912BwzXeX0yOPDqi8UP",
+      "authorship_tag": "ABX9TyN+nGd2ZiOrlQBQAAmY4O6s",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/pknujunseong/Bigpy/blob/main/%EC%97%B0%EC%8A%B5%EC%9A%A9.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = ('A')"
+      ],
+      "metadata": {
+        "id": "KG6manHvZeLE"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "튜플은 안바뀌지 않는 성질로 인해 바꿔지지 않는다."
+      ],
+      "metadata": {
+        "id": "D52A8RovnUiN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "m = (20)\n",
+        "n = (4.21)\n",
+        "r = ('데이터정보과학부')"
+      ],
+      "metadata": {
+        "id": "rHBluJJanZfZ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age = m\n",
+        "grade = n\n",
+        "major = r\n",
+        "print(age,grade,major)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "C6xlOlvvnkUB",
+        "outputId": "eff1e1d8-61ee-4bb1-f22a-18f7516e3c30"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "20 4.21 데이터정보과학부\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(f\"나는 {age}살이고 학점은 {grade}이며 {major}에 재학중이다.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "j_dajXhHn9_K",
+        "outputId": "6df7fa43-cc93-4b1c-95fe-cad7b805d7e5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "나는 20살이고 학점은 4.21이며 데이터정보과학부에 재학중이다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = {'VIP':0,'스탠딩':1, '지정석S' : 1, '지정석B':0,'지정석R':2}\n",
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QnXUcjALoMbk",
+        "outputId": "3732d296-4fdb-4bca-af55-a93de5b0ad93"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'VIP': 0, '스탠딩': 0, '지정석S': 1, '지정석B': 0, '지정석R': 2}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 31
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a['스탠딩']=0\n",
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OCr6ydwqqFoi",
+        "outputId": "b10db445-7421-4b8a-e6fc-393f7b893d53"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'VIP': 0, '스탠딩': 0, '지정석S': 1, '지정석B': 0, '지정석R': 2}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 33
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a['지정석 A'] = 3\n",
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "B-wEuZ0TqHoh",
+        "outputId": "c16dd0f1-4151-4770-aa03-f24c7a5b4347"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'VIP': 0, '스탠딩': 0, '지정석S': 1, '지정석B': 0, '지정석R': 2, '지정석 A': 3}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 35
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "c = {(35.1,29):'도서관', (22.0,52.7):'주택', (82.56,11.77):'주택'}\n",
+        "c"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hPU1179rqTzF",
+        "outputId": "d967972e-3b65-48b6-c26d-d1102584e5ad"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{(35.1, 29): '도서관', (22.0, 52.7): '주택', (82.56, 11.77): '주택'}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = set(['쇼핑','딸기','바닐라 라떼'])\n",
+        "b = set(['볼링','참외','자장면','바닐라 라떼'])\n",
+        "print(a)\n",
+        "print(b)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4Ybm7RHorY-X",
+        "outputId": "4eaa2fda-f64a-44bb-966e-122ac5412896"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'바닐라 라떼', '쇼핑', '딸기'}\n",
+            "{'볼링', '바닐라 라떼', '참외', '자장면'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print( a&b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "K7mQdtY8tb7L",
+        "outputId": "0c0c5cbf-d7e6-4f4f-8d65-f5d3ddd28143"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'바닐라 라떼'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(a-b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "052hNS5JthEV",
+        "outputId": "e0c13325-afd5-41d3-f3be-0d410fc03309"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'쇼핑', '딸기'}\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
